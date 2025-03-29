@@ -1,8 +1,8 @@
-import resolve from 'rollup-plugin-node-resolve';
-import commonJS from 'rollup-plugin-commonjs'
-import pkg from './package.json';
-import json from 'rollup-plugin-json';
-import { terser } from 'rollup-plugin-terser';
+import resolve from '@rollup/plugin-node-resolve';
+import commonJS from '@rollup/plugin-commonjs'
+import pkg from './package.json' with {type:'json'};
+import json from '@rollup/plugin-json';
+import terser from '@rollup/plugin-terser';
 
 const production = process.env.NODE_ENV !== 'development';
 
